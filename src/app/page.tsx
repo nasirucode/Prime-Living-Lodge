@@ -184,7 +184,7 @@ export default function Home() {
 
                           </div>
                           <h4 className="text-xl font-semibold text-[#003E3B] mb-3">Empowering Relationships</h4>
-                          <p className="text-gray-600 leading-relaxed">We build trust, encourage self-confidence, and champion every person's potential.</p>
+                          <p className="text-gray-600 leading-relaxed">We build trust, encourage self-confidence, and champion every person&apos;s potential.</p>
                         </div>
 
                         {/* Card 5: Qualified Leadership */}
