@@ -87,17 +87,21 @@ export default function Home() {
                         <div className="relative">
                           {/* Writing Hands Image */}
                           <div className="relative z-10">
-                            <img 
+                            <Image 
                               src="/images/pexels-michael-burrows-7129052.jpg" 
                               alt="Person writing in notebook" 
+                              width={320}
+                              height={440}
                               className="w-80 h-110 object-cover rounded-lg shadow-lg"
                             />
                           </div>
                           {/* Wheelchair Hands Image - Overlapping */}
                           <div className="absolute -top-20 -right-8 z-20">
-                            <img 
+                            <Image 
                               src="/images/wheelchair-749985_1280.jpg" 
                               alt="Person gripping wheelchair wheel" 
+                              width={288}
+                              height={400}
                               className="w-72 h-100 object-cover rounded-lg shadow-lg"
                             />
                           </div>

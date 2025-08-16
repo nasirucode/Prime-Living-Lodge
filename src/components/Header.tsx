@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,9 +40,11 @@ const Header = () => {
                       <div className="flex justify-between items-center py-2">
                 {/* Logo */}
                 <div className="flex items-center">
-                    <img 
+                    <Image 
                     src="/images/PLL-Logo png.png" 
                     alt="Prime Living Lodge Logo" 
+                    width={64}
+                    height={64}
                     className="w-16 h-16"
                     />
                 </div>

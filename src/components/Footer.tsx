@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -24,9 +25,11 @@ const Footer = () => {
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <div className="w-20 h-20 relative">
-                <img 
+                <Image 
                   src="/images/PLL-Logo png.png" 
                   alt="Prime Living Lodge Logo" 
+                  width={80}
+                  height={80}
                   className="w-full h-full"
                 />
               </div>
