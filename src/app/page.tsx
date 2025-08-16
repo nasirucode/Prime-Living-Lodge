@@ -1,6 +1,13 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
+import FAQSection from "../components/sections/faq";
 
 export default function Home() {
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+
   return (
     <div className="min-h-screen bg-white">
                                                             {/* Hero Section */}
@@ -207,6 +214,358 @@ export default function Home() {
                       </div>
                     </div>
                   </section>
+
+                  {/* Our Services Section */}
+                  <section className="py-24" style={{ background: 'linear-gradient(to right, #00B0A8, #004A47)' }}>
+                    <div className="max-w-6xl mx-auto px-12">
+                      {/* Section Header */}
+                      <div className="text-center mb-16 relative">
+                        <h2 className="text-base font-600 text-gray-300 uppercase tracking-wider mb-4">OUR SERVICES</h2>
+                        <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
+                          Your Well Being, Our Priority
+                          <div className="w-40 h-1 bg-white mt-2 mx-auto rounded-full"></div>
+                        </h3>
+                        <a href="/our-services" className="absolute right-0 top-0 text-white hover:text-teal-200 transition-colors">
+                          View All →
+                        </a>
+                      </div>
+
+                      {/* Service Cards Grid */}
+                      <div className="grid md:grid-cols-3 gap-8">
+                        {/* Card 1: Supported Living */}
+                        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                          <div>
+                            <Image 
+                              src="/images/pexels-kampus-7551592.jpg" 
+                              alt="Caregiver assisting older person in kitchen" 
+                              width={400}
+                              height={300}
+                              className="w-full h-48 object-cover rounded-b-lg"
+                            />
+                          </div>
+                          <div className="p-6">
+                            <div className="flex items-center mb-3">
+                            <svg className="w-5 h-5 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span className="text-sm text-gray-600">24-Hour Support</span>
+                          </div>
+                          <h4 className="text-xl font-bold text-gray-900 mb-3">Supported Living</h4>
+                          <p className="text-gray-600 leading-relaxed mb-4">
+                            Comfortable, Homely Environments With Individualised Support To Promote Independence And Wellbeing.
+                          </p>
+                          <button className="inline-flex items-center px-6 py-4 border-2 border-[#19017F] text-[#19017F] bg-white rounded-lg font-medium hover:bg-[#19017F] hover:text-white transition-colors">
+                            Learn More
+                            <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </svg>
+                          </button>
+                            </div>
+                          </div>
+
+                        {/* Card 2: Mental Health Support */}
+                        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                          <div>
+                            <Image 
+                              src="/images/autism care.jpg" 
+                              alt="Person holding colorful jigsaw puzzle piece" 
+                              width={400}
+                              height={300}
+                              className="w-full h-48 object-cover rounded-b-lg"
+                            />
+                          </div>
+                          <div className="p-6">
+                            <div className="flex items-center mb-3">
+                              <svg className="w-5 h-5 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                              <span className="text-sm text-gray-600">24-Hour Support</span>
+                            </div>
+                            <h4 className="text-xl font-bold text-gray-900 mb-3">Mental Health Support</h4>
+                            <p className="text-gray-600 leading-relaxed mb-4">
+                              Specialist Care For Individuals Managing Mental Health Challenges, With A Focus On Recovery And Resilience.
+                            </p>
+                            <button className="inline-flex items-center px-6 py-4 border-2 border-[#19017F] text-[#19017F] bg-white rounded-lg font-medium hover:bg-[#19017F] hover:text-white transition-colors">
+                              Learn More
+                              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+
+                        {/* Card 3: Learning and Physical Disabilities */}
+                        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                          <div>
+                            <Image 
+                              src="/images/dementia care.jpg" 
+                              alt="Two sets of hands gently clasped together" 
+                              width={400}
+                              height={300}
+                              className="w-full h-48 object-cover rounded-b-lg"
+                            />
+                          </div>
+                          <div className="p-6">
+                            <div className="flex items-center mb-3">
+                              <svg className="w-5 h-5 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                              <span className="text-sm text-gray-600">24-Hour Support</span>
+                            </div>
+                            <h4 className="text-xl font-bold text-gray-900 mb-3">Learning And Physical Disabilities</h4>
+                            <p className="text-gray-600 leading-relaxed mb-4">
+                              Practical And Emotional Support To Help Individuals Live Full, Empowered Lives.
+                            </p>
+                            <button className="inline-flex items-center px-6 py-4 border-2 border-[#19017F] text-[#19017F] bg-white rounded-lg font-medium hover:bg-[#19017F] hover:text-white transition-colors">
+                              Learn More
+                              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  {/* Contact Form Section */}
+                  <section className="py-24 relative">
+                    {/* Background Image */}
+                    <div className="absolute inset-0 z-0 h-7/20">
+                      <Image 
+                        src="/images/hands-4344711_1280.jpg" 
+                        alt="Older person's hands on textured surface" 
+                        fill
+                        className="object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-transparent"></div>
+                    </div>
+                    
+                    <div className="relative z-10 max-w-6xl mx-auto px-12">
+                      <div className="flex justify-center mt-16">
+                        {/* Contact Form with Embedded Image */}
+                        <div className="bg-[#00B0A8] p-12 shadow-2xl relative overflow-hidden w-full" style={{ minHeight: '600px' }}>
+                          <div className="grid lg:grid-cols-3 gap-8 items-start">
+                            {/* Left Side - Form */}
+                            <div className="lg:col-span-2 space-y-4">
+                              {/* <h3 className="text-2xl font-bold text-white mb-6">Get In Touch</h3> */}
+                              <form className="space-y-4">
+                                <div className="grid grid-cols-2 gap-4">
+                                  <div>
+                                    <label className="block text-white text-sm font-medium mb-2">Name</label>
+                                    <input 
+                                      type="text" 
+                                      className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-teal-400 focus:outline-none"
+                                      placeholder="Name"
+                                    />
+                                  </div>
+                                  <div>
+                                    <label className="block text-white text-sm font-medium mb-2">Email</label>
+                                    <input 
+                                      type="email" 
+                                      className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-teal-400 focus:outline-none"
+                                      placeholder="Email"
+                                    />
+                                  </div>
+                                </div>
+                                <div className="grid grid-cols-2 gap-4">
+                                  <div>
+                                    <label className="block text-white text-sm font-medium mb-2">Phone</label>
+                                    <input 
+                                      type="tel" 
+                                      className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 placeholder-gray-500 focus:ring-2 focus:ring-teal-400 focus:outline-none"
+                                      placeholder="Phone"
+                                    />
+                                  </div>
+                                  <div>
+                                    <label className="block text-white text-sm font-medium mb-2">Date</label>
+                                    <div className="relative">
+                                      <input 
+                                        type="text" 
+                                        className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-teal-400 focus:outline-none pr-10"
+                                        placeholder="DD/MM/YY"
+                                      />
+                                      <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                      </svg>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <label className="block text-white text-sm font-medium mb-2">Select Services</label>
+                                  <div className="relative">
+                                    <select className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 focus:ring-2 focus:ring-teal-400 focus:outline-none appearance-none">
+                                      <option>Select Services</option>
+                                      <option>Supported Living</option>
+                                      <option>Mental Health Support</option>
+                                      <option>Learning Disabilities</option>
+                                      <option>Physical Disabilities</option>
+                                    </select>
+                                    <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                  </div>
+                                </div>
+                                <div>
+                                  <label className="block text-white text-sm font-medium mb-2">Message</label>
+                                  <textarea 
+                                    rows={4}
+                                    className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-teal-400 focus:outline-none resize-none"
+                                    placeholder="Message"
+                                  ></textarea>
+                                </div>
+                                <div className="flex justify-center">
+                                  <button 
+                                    type="submit" 
+                                    className="w-100 bg-[#19017F] text-white px-4 py-2 rounded-full font-medium hover:bg-[#14015F] transition-colors"
+                                  >
+                                    Submit
+                                  </button>
+                                </div>
+                              </form>
+                            </div>
+
+                            {/* Right Side - Embedded Image */}
+                            <div className="relative mt-8">
+                              <Image 
+                                src="/images/pexels-michael-burrows-7129052.jpg" 
+                                alt="Person writing in notebook with pen" 
+                                width={400}
+                                height={300}
+                                className="rounded-lg shadow-lg h-96 object-cover"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  {/* Testimonials Section */}
+                  <section className="py-12 bg-white">
+                    <div className="max-w-6xl mx-auto px-12">
+                      {/* Section Header */}
+                      <div className="text-center mb-16">
+                        <h2 className="text-base font-semibold text-gray-600 uppercase tracking-wider mb-4">TESTIMONIALS</h2>
+                        <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+                          Our Clients Say
+                          <div className="w-40 h-1 bg-[#00B0A8] mt-2 mx-auto rounded-full"></div>
+                        </h3>
+                      </div>
+
+                      {/* Testimonial Content */}
+                      <div className="relative">
+                        {/* Navigation Arrows */}
+                        <button 
+                          onClick={() => setCurrentTestimonial((prev) => prev === 0 ? 2 : prev - 1)}
+                          className="absolute left-0 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-[#B0E7E4] rounded-full flex items-center justify-center hover:bg-[#004A47] transition-colors z-10"
+                        >
+                          <svg className="w-6 h-6 text-[#00B0A8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                          </svg>
+                        </button>
+                        
+                        <button 
+                          onClick={() => setCurrentTestimonial((prev) => prev === 2 ? 0 : prev + 1)}
+                          className="absolute right-0 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-[#B0E7E4] rounded-full flex items-center justify-center hover:bg-[#004A47] transition-colors z-10"
+                        >
+                          <svg className="w-6 h-6 text-[#00B0A8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </button>
+
+                        {/* Testimonial 1 */}
+                        <div className={`text-center px-16 transition-opacity duration-300 ${currentTestimonial === 0 ? 'opacity-100' : 'opacity-0 absolute inset-0'}`}>
+                          {/* Profile Picture */}
+                          <div className="w-24 h-24 mx-auto mb-8">
+                            <div className="w-full h-full rounded-full border-2 border-[#00B0A8] overflow-hidden">
+                              <Image 
+                                src="/images/testimonial-profile-1.png" 
+                                alt="Brooklyn Simmons" 
+                                width={96}
+                                height={96}
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
+                          </div>
+                          
+                          {/* Quote */}
+                          <blockquote className="text-lg text-gray-700 leading-relaxed mb-6 italic px-32 py-6 bg-gray-50 rounded-lg">
+                            "Prime Living Lodge has been absolutely amazing for my brother. The staff are caring, professional, and truly understand his needs. He's never been happier or more independent."
+                          </blockquote>
+                          
+                          {/* Name */}
+                          <p className="text-xl font-bold text-gray-900">Brooklyn Simmons</p>
+                        </div>
+
+                        {/* Testimonial 2 */}
+                        <div className={`text-center px-16 transition-opacity duration-300 ${currentTestimonial === 1 ? 'opacity-100' : 'opacity-0 absolute inset-0'}`}>
+                          {/* Profile Picture */}
+                          <div className="w-24 h-24 mx-auto mb-8">
+                            <div className="w-full h-full rounded-full border-2 border-[#00B0A8] overflow-hidden">
+                              <Image 
+                                src="/images/testimonial-profile-1.png" 
+                                alt="Sarah Johnson" 
+                                width={96}
+                                height={96}
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
+                          </div>
+                          
+                          {/* Quote */}
+                          <blockquote className="text-lg text-gray-700 leading-relaxed mb-6 italic px-32 py-6 bg-gray-50 rounded-lg">
+                            "The level of care and attention my mother receives is exceptional. The team at Prime Living Lodge goes above and beyond to ensure her comfort and wellbeing every single day."
+                          </blockquote>
+                          
+                          {/* Name */}
+                          <p className="text-xl font-bold text-gray-900">Sarah Johnson</p>
+                        </div>
+
+                        {/* Testimonial 3 */}
+                        <div className={`text-center px-16 transition-opacity duration-300 ${currentTestimonial === 2 ? 'opacity-100' : 'opacity-0 absolute inset-0'}`}>
+                          {/* Profile Picture */}
+                          <div className="w-24 h-24 mx-auto mb-8">
+                            <div className="w-full h-full rounded-full border-2 border-[#00B0A8] overflow-hidden">
+                              <Image 
+                                src="/images/testimonial-profile-1.png" 
+                                alt="Michael Chen" 
+                                width={96}
+                                height={96}
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
+                          </div>
+                          
+                          {/* Quote */}
+                          <blockquote className="text-lg text-gray-700 leading-relaxed mb-6 italic px-32 py-6 bg-gray-50 rounded-lg">
+                            "I was worried about finding the right support for my son, but Prime Living Lodge has exceeded all expectations. The staff are like family and truly care about his development."
+                          </blockquote>
+                          
+                          {/* Name */}
+                          <p className="text-xl font-bold text-gray-900">Michael Chen</p>
+                        </div>
+                      </div>
+
+                      {/* Pagination Dots */}
+                      <div className="flex justify-center mt-8 space-x-2">
+                        <button 
+                          onClick={() => setCurrentTestimonial(0)}
+                          className={`w-3 h-3 rounded-full transition-colors ${currentTestimonial === 0 ? 'bg-[#00B0A8]' : 'bg-gray-300'}`}
+                        ></button>
+                        <button 
+                          onClick={() => setCurrentTestimonial(1)}
+                          className={`w-3 h-3 rounded-full transition-colors ${currentTestimonial === 1 ? 'bg-[#00B0A8]' : 'bg-gray-300'}`}
+                        ></button>
+                        <button 
+                          onClick={() => setCurrentTestimonial(2)}
+                          className={`w-3 h-3 rounded-full transition-colors ${currentTestimonial === 2 ? 'bg-[#00B0A8]' : 'bg-gray-300'}`}
+                        ></button>
+                      </div>
+                    </div>
+                  </section>
+
+                  <FAQSection />
                 </div>
               );
             }
