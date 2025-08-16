@@ -1,0 +1,21 @@
+{
+  "name": "Prime Living Lodge",
+  "short_name": "PLL",
+  "description": "Professional care and support services for independent living",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#00B0A8",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/"
+}
