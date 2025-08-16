@@ -34,7 +34,7 @@ export default function FAQSection() {
             {openFAQ === 1 && (
               <div className="px-6 pb-6">
                 <p className="text-black group-hover:text-white leading-relaxed transition-colors">
-                  Yes, absolutely! You can contact us through multiple channels. Call us at 01234 567890, email us at info@primelivinglodge.co.uk, or fill out our contact form on this website. Our team is available Monday to Friday, 9 AM to 5 PM, and we'll get back to you within 24 hours.
+                  Yes, absolutely! You can contact us through multiple channels. Call us at 01234 567890, email us at info@primelivinglodge.co.uk, or fill out our contact form on this website. Our team is available Monday to Friday, 9 AM to 5 PM, and we&apos;ll get back to you within 24 hours.
                 </p>
               </div>
             )}
@@ -122,7 +122,7 @@ export default function FAQSection() {
             {openFAQ === 5 && (
               <div className="px-6 pb-6">
                 <p className="text-black group-hover:text-white leading-relaxed transition-colors">
-                  You can find our CQC reports on the official CQC website (www.cqc.org.uk) by searching for "Prime Living Lodge" or by visiting our specific service location pages. We're proud of our "Good" rating and encourage all potential clients to review our reports. You can also request a printed copy from our office or ask us to email it to you directly.
+                  You can find our CQC reports on the official CQC website (www.cqc.org.uk) by searching for &ldquo;Prime Living Lodge&rdquo; or by visiting our specific service location pages. We&apos;re proud of our &ldquo;Good&rdquo; rating and encourage all potential clients to review our reports. You can also request a printed copy from our office or ask us to email it to you directly.
                 </p>
               </div>
             )}
@@ -144,7 +144,7 @@ export default function FAQSection() {
             {openFAQ === 6 && (
               <div className="px-6 pb-6">
                 <p className="text-black group-hover:text-white leading-relaxed transition-colors">
-                  Yes, we strongly encourage visits before making any decisions! We offer scheduled viewings of our properties where you can meet potential housemates, see the facilities, and get a feel for the environment. You can also meet some of our support staff during your visit. We want you to feel completely comfortable with your choice, so we're happy to arrange multiple visits if needed.
+                  Yes, we strongly encourage visits before making any decisions! We offer scheduled viewings of our properties where you can meet potential housemates, see the facilities, and get a feel for the environment. You can also meet some of our support staff during your visit. We want you to feel completely comfortable with your choice, so we&apos;re happy to arrange multiple visits if needed.
                 </p>
               </div>
             )}

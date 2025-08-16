@@ -334,7 +334,7 @@ export default function Home() {
                     <div className="absolute inset-0 z-0 h-7/20">
                       <Image 
                         src="/images/hands-4344711_1280.jpg" 
-                        alt="Older person's hands on textured surface" 
+                        alt="Older person&apos;s hands on textured surface" 
                         fill
                         className="object-cover"
                       />
@@ -491,7 +491,7 @@ export default function Home() {
                           
                           {/* Quote */}
                           <blockquote className="text-lg text-gray-700 leading-relaxed mb-6 italic px-32 py-6 bg-gray-50 rounded-lg">
-                            "Prime Living Lodge has been absolutely amazing for my brother. The staff are caring, professional, and truly understand his needs. He's never been happier or more independent."
+                            &ldquo;Prime Living Lodge has been absolutely amazing for my brother. The staff are caring, professional, and truly understand his needs. He&apos;s never been happier or more independent.&rdquo;
                           </blockquote>
                           
                           {/* Name */}
@@ -515,7 +515,7 @@ export default function Home() {
                           
                           {/* Quote */}
                           <blockquote className="text-lg text-gray-700 leading-relaxed mb-6 italic px-32 py-6 bg-gray-50 rounded-lg">
-                            "The level of care and attention my mother receives is exceptional. The team at Prime Living Lodge goes above and beyond to ensure her comfort and wellbeing every single day."
+                            &ldquo;The level of care and attention my mother receives is exceptional. The team at Prime Living Lodge goes above and beyond to ensure her comfort and wellbeing every single day.&rdquo;
                           </blockquote>
                           
                           {/* Name */}
@@ -539,7 +539,7 @@ export default function Home() {
                           
                           {/* Quote */}
                           <blockquote className="text-lg text-gray-700 leading-relaxed mb-6 italic px-32 py-6 bg-gray-50 rounded-lg">
-                            "I was worried about finding the right support for my son, but Prime Living Lodge has exceeded all expectations. The staff are like family and truly care about his development."
+                            &ldquo;I was worried about finding the right support for my son, but Prime Living Lodge has exceeded all expectations. The staff are like family and truly care about his development.&rdquo;
                           </blockquote>
                           
                           {/* Name */}
