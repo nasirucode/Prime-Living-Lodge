@@ -75,7 +75,7 @@ const Header = () => {
               <Link 
                 href="/our-services" 
                 className={`font-medium transition-colors pb-1 ${
-                  pathname === '/our-services' 
+                  pathname === '/our-services' || pathname.startsWith('/our-services/')
                     ? 'text-green-800 border-b-2 border-green-800' 
                     : 'text-teal-700 hover:text-teal-800'
                 }`}
@@ -151,9 +151,9 @@ const Header = () => {
                 <Link 
                   href="/our-services" 
                   className={`font-medium pb-1 ${
-                    pathname === '/our-services' 
+                    pathname === '/our-services' || pathname.startsWith('/our-services/')
                       ? 'text-green-800 border-b-2 border-green-800' 
-                      : 'text-teal-700 hover:text-teal-800'
+                      : 'text-teal-800'
                   }`}
                 >
                   Our Services

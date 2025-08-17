@@ -178,7 +178,7 @@ export default function WhoWeAre() {
                   </div>
                   
                   {/* See Profile Button */}
-                  <a href="#" className="inline-block bg-white text-[#003E3B] px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-100 transition-colors">
+                  <a href="/who-we-are/bukola-temilade" className="inline-block bg-white text-[#003E3B] px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-100 transition-colors">
                     See Profile
                   </a>
                 </div>
@@ -237,7 +237,7 @@ export default function WhoWeAre() {
                   </div>
                   
                   {/* See Profile Button */}
-                  <a href="#" className="inline-block bg-white text-[#003E3B] px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-100 transition-colors">
+                  <a href="/who-we-are/kemi-akinyemi" className="inline-block bg-white text-[#003E3B] px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-100 transition-colors">
                     See Profile
                   </a>
                 </div>
@@ -296,7 +296,7 @@ export default function WhoWeAre() {
                   </div>
                   
                   {/* See Profile Button */}
-                  <a href="#" className="inline-block bg-white text-[#003E3B] px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-100 transition-colors">
+                  <a href="/who-we-are/james-albert" className="inline-block bg-white text-[#003E3B] px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-100 transition-colors">
                     See Profile
                   </a>
                 </div>
@@ -355,7 +355,7 @@ export default function WhoWeAre() {
                   </div>
                   
                   {/* See Profile Button */}
-                  <a href="#" className="inline-block bg-white text-[#003E3B] px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-100 transition-colors">
+                  <a href="/who-we-are/helen-albert" className="inline-block bg-white text-[#003E3B] px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-100 transition-colors">
                     See Profile
                   </a>
                 </div>

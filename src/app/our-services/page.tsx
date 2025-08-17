@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import FAQSection from "../../components/sections/faq";
+import CallToActionSection from "../../components/sections/CallToActionSection";
 
 export default function OurServices() {
   return (
@@ -68,7 +69,7 @@ export default function OurServices() {
                   <p className="text-sm text-gray-600 leading-relaxed mb-3">
                     Specialist Care For Individuals Managing Mental Health Challenges, With A Focus On Recovery And Resilience.
                   </p>
-                  <a href="#" className="inline-flex items-center text-teal-600 hover:text-teal-800 font-medium text-sm">
+                  <a href="/our-services/mental-health-support" className="inline-flex items-center text-teal-600 hover:text-teal-800 font-medium text-sm">
                     Learn More
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -99,7 +100,7 @@ export default function OurServices() {
                   <p className="text-sm text-gray-600 leading-relaxed mb-3">
                     Comfortable, Homely Environments With Individualised Support To Promote Independence And Wellbeing.
                   </p>
-                  <a href="#" className="inline-flex items-center text-teal-600 hover:text-teal-800 font-medium text-sm">
+                  <a href="/our-services/supported-living" className="inline-flex items-center text-teal-600 hover:text-teal-800 font-medium text-sm">
                     Learn More
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -128,9 +129,9 @@ export default function OurServices() {
                   </div>
                   <h4 className="text-lg font-bold text-gray-900 mb-2">Substance Misuse And Recovery Support</h4>
                   <p className="text-sm text-gray-600 leading-relaxed mb-3">
-                    Comfortable, Homely Environments With Individualised Support To Promote Independence And Wellbeing.
+                    Compassionate support for individuals on their journey to recovery from substance misuse, offering safe environments and comprehensive recovery plans.
                   </p>
-                  <a href="#" className="inline-flex items-center text-teal-600 hover:text-teal-800 font-medium text-sm">
+                  <a href="/our-services/substance-misuse" className="inline-flex items-center text-teal-600 hover:text-teal-800 font-medium text-sm">
                     Learn More
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -161,7 +162,7 @@ export default function OurServices() {
                   <p className="text-sm text-gray-600 leading-relaxed mb-3">
                     Practical And Emotional Support To Help Individuals Live Full Empowered Lives.
                   </p>
-                  <a href="#" className="inline-flex items-center text-teal-600 hover:text-teal-800 font-medium text-sm">
+                  <a href="/our-services/learning-physical-disabilities" className="inline-flex items-center text-teal-600 hover:text-teal-800 font-medium text-sm">
                     Learn More
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -175,38 +176,8 @@ export default function OurServices() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-24 relative">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <Image 
-            src="/images/pexels-yaroslav-shuraev-8088595.jpg" 
-            alt="Elderly person's hands on textured surface" 
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
-        </div>
-        
-        <div className="relative z-10 max-w-6xl mx-auto px-12">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Side - Text */}
-            <div className="text-white">
-              <p className="text-lg leading-relaxed">
-                Everything at Prime Living Lodge is planned to create an atmosphere of home, safety, warmth and care, whilst keeping its function as an exceptionally innovative and well-run supported living service.
-              </p>
-            </div>
-
-            {/* Right Side - Video Play Button */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-gray-100 transition-colors cursor-pointer">
-                <svg className="w-8 h-8 text-teal-600 ml-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CallToActionSection />
+      
       <FAQSection />
     </div>
   );
