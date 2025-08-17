@@ -417,6 +417,7 @@ export default function WhoWeAre() {
           {/* This section ensures white background extends below */}
         </div>
       </section>
+      
     </div>
   );
 }

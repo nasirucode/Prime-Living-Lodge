@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import Link from "next/link";
+import { useState, useEffect } from "react";
 import FAQSection from "../components/sections/faq";
 
 export default function Home() {
@@ -25,9 +26,9 @@ export default function Home() {
                           <p className="text-base text-gray-200 mb-4 leading-relaxed">
                             With the right care and support, people living with mental health conditions can live and play an active role in their local community.
                           </p>
-                          <button className="bg-[#19017F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#14015F] transition-colors text-base">
+                          <Link href="/contact-us" className="inline-block bg-[#19017F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#14015F] transition-colors text-base">
                             Get In Touch
-                          </button>
+                          </Link>
                         </div>
                     </div>
                   </section>
@@ -119,12 +120,12 @@ export default function Home() {
                           <p className="text-lg text-gray-700 leading-relaxed -mt-8 mb-16">
                             Prime Living Lodge Ltd (PLL) Is A Midlands Based Supported Living Company Aimed At Providing High-Quality Accommodation And Support For Vulnerable Adults In The Midlands Region, Starting In Warwickshire County.
                           </p>
-                          <button className="inline-flex items-center px-6 py-4 border-2 border-[#19017F] text-[#19017F] bg-white rounded-lg font-medium hover:bg-[#19017F] hover:text-white transition-colors">
+                          <Link href="/who-we-are" className="inline-flex items-center px-6 py-4 border-2 border-[#19017F] text-[#19017F] bg-white rounded-lg font-medium hover:bg-[#19017F] hover:text-white transition-colors">
                             Learn More
                             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                             </svg>
-                          </button>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -254,12 +255,12 @@ export default function Home() {
                           <p className="text-gray-600 leading-relaxed mb-4">
                             Comfortable, Homely Environments With Individualised Support To Promote Independence And Wellbeing.
                           </p>
-                          <button className="inline-flex items-center px-6 py-4 border-2 border-[#19017F] text-[#19017F] bg-white rounded-lg font-medium hover:bg-[#19017F] hover:text-white transition-colors">
+                          <a href="/our-services/supported-living" className="inline-flex items-center px-6 py-4 border-2 border-[#19017F] text-[#19017F] bg-white rounded-lg font-medium hover:bg-[#19017F] hover:text-white transition-colors">
                             Learn More
                             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                             </svg>
-                          </button>
+                          </a>
                             </div>
                           </div>
 
@@ -285,12 +286,12 @@ export default function Home() {
                             <p className="text-gray-600 leading-relaxed mb-4">
                               Specialist Care For Individuals Managing Mental Health Challenges, With A Focus On Recovery And Resilience.
                             </p>
-                            <button className="inline-flex items-center px-6 py-4 border-2 border-[#19017F] text-[#19017F] bg-white rounded-lg font-medium hover:bg-[#19017F] hover:text-white transition-colors">
+                            <a href="/our-services/mental-health-support" className="inline-flex items-center px-6 py-4 border-2 border-[#19017F] text-[#19017F] bg-white rounded-lg font-medium hover:bg-[#19017F] hover:text-white transition-colors">
                               Learn More
                               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                               </svg>
-                            </button>
+                            </a>
                           </div>
                         </div>
 
@@ -316,12 +317,12 @@ export default function Home() {
                             <p className="text-gray-600 leading-relaxed mb-4">
                               Practical And Emotional Support To Help Individuals Live Full, Empowered Lives.
                             </p>
-                            <button className="inline-flex items-center px-6 py-4 border-2 border-[#19017F] text-[#19017F] bg-white rounded-lg font-medium hover:bg-[#19017F] hover:text-white transition-colors">
+                            <a href="/our-services/learning-physical-disabilities" className="inline-flex items-center px-6 py-4 border-2 border-[#19017F] text-[#19017F] bg-white rounded-lg font-medium hover:bg-[#19017F] hover:text-white transition-colors">
                               Learn More
                               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                               </svg>
-                            </button>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -329,7 +330,7 @@ export default function Home() {
                   </section>
 
                   {/* Contact Form Section */}
-                  <section className="py-24 relative">
+                  <section id="contact-form" className="py-24 relative">
                     {/* Background Image */}
                     <div className="absolute inset-0 z-0 h-7/20">
                       <Image 
@@ -566,5 +567,6 @@ export default function Home() {
 
                   <FAQSection />
                 </div>
-              );
-            }
+             
+          );
+        }

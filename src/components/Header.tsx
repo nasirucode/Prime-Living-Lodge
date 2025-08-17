@@ -2,15 +2,48 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import Image from 'next/image';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleMakeEnquiry = () => {
+    if (pathname === '/') {
+      // If already on home page, scroll to contact form
+      const contactForm = document.getElementById('contact-form');
+      if (contactForm) {
+        const headerHeight = 120; // Approximate header height
+        const elementPosition = contactForm.offsetTop - headerHeight;
+        window.scrollTo({
+          top: elementPosition,
+          behavior: 'smooth'
+        });
+      }
+    } else {
+      // If on another page, navigate to home page first, then scroll
+      router.push('/');
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+          const headerHeight = 120; // Approximate header height
+          const elementPosition = contactForm.offsetTop - headerHeight;
+          window.scrollTo({
+            top: elementPosition,
+            behavior: 'smooth'
+          });
+        }
+      }, 100);
+    }
+    // Close mobile menu if open
+    setIsMenuOpen(false);
   };
 
   return (
@@ -106,7 +139,10 @@ const Header = () => {
 
             {/* Call to Action Button */}
             <div className="hidden md:block">
-                                        <button className="bg-[#19017F] text-white px-8 py-4 rounded-lg font-medium hover:bg-[#14015F] transition-colors">
+                                        <button 
+                                          onClick={handleMakeEnquiry}
+                                          className="bg-[#19017F] text-white px-8 py-4 rounded-lg font-medium hover:bg-[#14015F] transition-colors"
+                                        >
                             Make Enquiry
                           </button>
             </div>
@@ -163,7 +199,7 @@ const Header = () => {
                   className={`font-medium pb-1 ${
                     pathname === '/careers' 
                       ? 'text-green-800 border-b-2 border-green-800' 
-                      : 'text-teal-800'
+                      : 'text-teal-700 hover:text-teal-800'
                   }`}
                 >
                   Careers
@@ -178,7 +214,10 @@ const Header = () => {
                 >
                   Contact Us
                 </Link>
-                <button className="bg-[#19017F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#14015F] transition-colors w-full">
+                <button 
+                  onClick={handleMakeEnquiry}
+                  className="bg-[#19017F] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#14015F] transition-colors w-full"
+                >
                   Make Enquiry
                 </button>
               </div>
