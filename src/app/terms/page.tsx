@@ -9,7 +9,7 @@ export default function Terms() {
   return (
     <div className="min-h-screen bg-white">
       {/* Spacer to prevent content from being hidden behind fixed header */}
-      <div className="h-12 md:h-16"></div>
+      {/* <div className="h-12 md:h-16"></div> */}
       
       {/* Main Content Section */}
       <section className="py-8 md:py-12 lg:py-24">

@@ -10,6 +10,7 @@ const Header = () => {
   const pathname = usePathname();
   const router = useRouter();
   const isLegalPage = pathname === '/terms' || pathname === '/privacy' || pathname === '/legal' || pathname === '/sitemap';
+  // const isLegalPage = true;
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -231,9 +232,14 @@ const Header = () => {
               </div>
             </div>
           )}
+
+          
         </div>
+        
       </nav>
+      
     </header>
+   
   );
 };
 
