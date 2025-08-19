@@ -83,7 +83,7 @@ export default function Terms() {
                       1. Use of Website
                     </h3>
                     <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-                      This website provides information about our supported living services. You agree to use this website only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of the website.
+                      This website provides information about our supported living services. You agree to use this website only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else&apos;s use and enjoyment of the website.
                     </p>
                   </div>
 
