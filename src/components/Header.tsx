@@ -9,6 +9,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
+  const isLegalPage = pathname === '/terms' || pathname === '/privacy' || pathname === '/legal' || pathname === '/sitemap';
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -47,7 +48,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full">
+    <header className={`w-full ${isLegalPage ? 'fixed top-0 left-0 right-0 z-50' : ''}`}>
         {/* Top Contact Bar */}
             <div className="bg-teal-800 text-white py-2 md:py-4 px-4 md:px-8">
                                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center md:justify-end items-center md:items-center text-xs md:text-sm space-y-2 md:space-y-0 md:space-x-6 lg:space-x-12 px-4 md:px-12">
@@ -68,7 +69,7 @@ const Header = () => {
             </div>
 
                         {/* Main Navigation Bar */}
-                  <nav className="bg-white shadow-md">
+                  <nav className={`bg-white shadow-md ${isLegalPage ? 'fixed top-8 md:top-12 left-0 right-0 z-40' : ''}`}>
                     <div className="max-w-6xl mx-auto px-12">
                       <div className="flex justify-between items-center py-2">
                 {/* Logo */}
@@ -168,6 +169,7 @@ const Header = () => {
               <div className="flex flex-col space-y-4">
                 <Link 
                   href="/" 
+                  onClick={() => setIsMenuOpen(false)}
                   className={`font-medium pb-1 ${
                     pathname === '/' 
                       ? 'text-green-800 border-b-2 border-green-800' 
@@ -178,6 +180,7 @@ const Header = () => {
                 </Link>
                 <Link 
                   href="/who-we-are" 
+                  onClick={() => setIsMenuOpen(false)}
                   className={`font-medium pb-1 ${
                     pathname === '/who-we-are' 
                       ? 'text-green-800 border-b-2 border-green-800' 
@@ -188,6 +191,7 @@ const Header = () => {
                 </Link>
                 <Link 
                   href="/our-services" 
+                  onClick={() => setIsMenuOpen(false)}
                   className={`font-medium pb-1 ${
                     pathname === '/our-services' || pathname.startsWith('/our-services/')
                       ? 'text-green-800 border-b-2 border-green-800' 
@@ -198,6 +202,7 @@ const Header = () => {
                 </Link>
                 <Link 
                   href="/careers" 
+                  onClick={() => setIsMenuOpen(false)}
                   className={`font-medium pb-1 ${
                     pathname === '/careers' 
                       ? 'text-green-800 border-b-2 border-green-800' 
@@ -208,6 +213,7 @@ const Header = () => {
                 </Link>
                 <Link 
                   href="/contact-us" 
+                  onClick={() => setIsMenuOpen(false)}
                   className={`font-medium pb-1 ${
                     pathname === '/contact-us' 
                       ? 'text-green-800 border-b-2 border-green-800' 
