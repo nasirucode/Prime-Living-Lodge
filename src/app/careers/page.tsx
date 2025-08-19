@@ -54,56 +54,56 @@ export default function Careers() {
       </section>
 
       {/* Main Content Section */}
-      <section className="py-24">
-        <div className="max-w-6xl mx-auto px-12">
-          <div className="grid lg:grid-cols-5 gap-12 items-start">
+      <section className="py-12 md:py-24">
+        <div className="max-w-6xl mx-auto px-4 md:px-12">
+          <div className="grid lg:grid-cols-5 gap-6 md:gap-12 items-start">
             {/* Left Side - Content (55% width) */}
             <div className="lg:col-span-3">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 md:mb-6">
                 Be Part of Our<br />Team of Experts
               </h2>
               
-              <div className="space-y-6 text-gray-600 leading-relaxed">
-                <p className="text-lg text-justify">
+              <div className="space-y-4 md:space-y-6 text-gray-600 leading-relaxed">
+                <p className="text-base md:text-lg text-justify">
                   Prime Living Lodge is a supported living provider committed to making a difference in the lives of vulnerable adults. We are passionate about what we do and dedicated to providing the highest quality of care and support.
                 </p>
                 
-                <p className="text-lg text-justify">
+                <p className="text-base md:text-lg text-justify">
                   We are a supportive, professional, and forward-thinking organization that values compassion, respect, and excellence. Our team works together to create a positive impact in the lives of those we serve.
                 </p>
 
-                <p className="text-lg text-justify">
+                <p className="text-base md:text-lg text-justify">
                   Our team plays a crucial role in helping individuals with unique needs live with dignity, independence, and purpose. We invite empathetic and motivated individuals to join our team and make a real difference.
                 </p>
 
                 <div className="space-y-4">
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Roles we Offer</h3>
+                    <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">Roles we Offer</h3>
                     <div className="space-y-2">
                       <div className="flex items-center">
-                        <svg className="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4 md:w-5 md:h-5 text-green-600 mr-2 md:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
-                        <span className="text-gray-700">Registered Care Home Manager</span>
+                        <span className="text-sm md:text-base text-gray-700">Registered Care Home Manager</span>
                       </div>
                       <div className="flex items-center">
-                        <svg className="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4 md:w-5 md:h-5 text-green-600 mr-2 md:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
-                        <span className="text-gray-700">Senior Support Worker</span>
+                        <span className="text-sm md:text-base text-gray-700">Senior Support Worker</span>
                       </div>
                       <div className="flex items-center">
-                        <svg className="w-5 h-5 text-green-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4 md:w-5 md:h-5 text-green-600 mr-2 md:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                         </svg>
-                        <span className="text-gray-700">Support Worker</span>
+                        <span className="text-sm md:text-base text-gray-700">Support Worker</span>
                       </div>
                     </div>
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">Our Commitment to You</h3>
-                    <p className="text-lg text-justify">
+                    <h3 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">Our Commitment to You</h3>
+                    <p className="text-base md:text-lg text-justify">
                       We are committed to building an inclusive and diverse workforce. We provide respect, tools, and opportunities for our team members to thrive. We promote work-life balance for a healthy, flexible, and fulfilling work environment.
                     </p>
                   </div>
@@ -113,10 +113,10 @@ export default function Careers() {
 
             {/* Right Side - Contact Form (45% width) */}
             <div className="lg:col-span-2">
-              <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Job Application Form</h3>
+              <div className="bg-white rounded-lg shadow-lg p-4 md:p-6 lg:p-8 border border-gray-200">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">Job Application Form</h3>
                 
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-3 md:space-y-4">
                   {/* Job Role Selection */}
                   <div>
                     <label htmlFor="jobRole" className="block text-sm font-medium text-gray-700 mb-2">
@@ -125,7 +125,7 @@ export default function Careers() {
                     <select
                       id="jobRole"
                       name="jobRole"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                      className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm md:text-base"
                     >
                       <option value="">Job role</option>
                       <option value="care-manager">Care Manager</option>
@@ -136,7 +136,7 @@ export default function Careers() {
                   </div>
 
                   {/* Name Fields */}
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                     <div>
                       <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
                         First name
@@ -147,7 +147,7 @@ export default function Careers() {
                         name="firstName"
                         value={formData.firstName}
                         onChange={handleInputChange}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                        className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm md:text-base"
                         required
                       />
                     </div>
@@ -161,14 +161,14 @@ export default function Careers() {
                         name="lastName"
                         value={formData.lastName}
                         onChange={handleInputChange}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                        className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm md:text-base"
                         required
                       />
                     </div>
                   </div>
 
                   {/* Contact Fields */}
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                         Email
@@ -179,7 +179,7 @@ export default function Careers() {
                         name="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                        className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm md:text-base"
                         required
                       />
                     </div>
@@ -193,7 +193,7 @@ export default function Careers() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                        className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm md:text-base"
                         required
                       />
                     </div>
@@ -210,7 +210,7 @@ export default function Careers() {
                       name="city"
                       value={formData.city}
                       onChange={handleInputChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                      className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm md:text-base"
                       required
                     />
                   </div>
@@ -227,7 +227,7 @@ export default function Careers() {
                       onChange={handleInputChange}
                       rows={4}
                       placeholder="Your Message here"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                      className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm md:text-base resize-none"
                       required
                     ></textarea>
                   </div>
@@ -237,7 +237,7 @@ export default function Careers() {
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Resume
                     </label>
-                    <div className="border-2 border-dashed border-gray-300 rounded-md p-6 text-center hover:border-teal-400 transition-colors">
+                    <div className="border-2 border-dashed border-gray-300 rounded-md p-4 md:p-6 text-center hover:border-teal-400 transition-colors">
                       <input
                         type="file"
                         id="resume"
@@ -248,8 +248,8 @@ export default function Careers() {
                       />
                       <label htmlFor="resume" className="cursor-pointer">
                         <div className="text-gray-600">
-                          <p>Drop your resume here or <span className="text-blue-600 font-medium">browse</span></p>
-                          <p className="text-sm text-gray-500 mt-1">Max file size, 4MB (pdf, doc, docx)</p>
+                          <p className="text-sm md:text-base">Drop your resume here or <span className="text-blue-600 font-medium">browse</span></p>
+                          <p className="text-xs md:text-sm text-gray-500 mt-1">Max file size, 4MB (pdf, doc, docx)</p>
                         </div>
                       </label>
                     </div>
@@ -258,7 +258,7 @@ export default function Careers() {
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="w-full bg-blue-900 text-white py-3 px-6 rounded-md font-medium hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    className="w-full bg-blue-900 text-white py-3 md:py-4 px-6 rounded-md font-medium hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 text-sm md:text-base"
                   >
                     Subscribe Now
                   </button>

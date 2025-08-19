@@ -125,7 +125,7 @@ export default function WhoWeAre() {
           </div>
 
           {/* Team Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3">
                         {/* Team Member 1 - BUKOLA TEMILADE */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col group cursor-pointer transition-all duration-500 hover:shadow-xl relative">
               <div className="relative">

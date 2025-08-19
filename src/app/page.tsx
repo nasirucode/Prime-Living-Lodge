@@ -35,19 +35,19 @@ export default function Home() {
 
                   {/* Service Highlights Section */}
                   <section className="relative -mt-24 mb-8">
-                    <div className="max-w-6xl mx-auto px-12">
-                        <div className="bg-teal-800 py-8 px-8 rounded-2xl shadow-2xl">
+                    <div className="max-w-6xl mx-auto px-4 md:px-12">
+                        <div className="bg-teal-800 py-8 px-4 md:px-8 rounded-2xl shadow-2xl">
                         <div className="grid md:grid-cols-2 gap-6">
                           {/* Left Column - 24/7 Support */}
                           <div className="text-left text-white">
-                            <div className="flex justify-start mb-3 ml-16">
+                            <div className="flex justify-start mb-3 ml-4 md:ml-16">
                               <div className="w-10 h-10 bg-opacity-20 rounded-full flex items-center justify-center">
                                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                               </div>
                             </div>
-                            <div className="text-left ml-16">
+                            <div className="text-left ml-4 md:ml-16">
                               <h3 className="text-lg font-bold mb-2">24/7 Support</h3>
                               <p className="text-sm text-gray-200">Committed to being there every hour, every day</p>
                             </div>
@@ -55,14 +55,14 @@ export default function Home() {
                           
                           {/* Right Column - Certified Best */}
                           <div className="text-left text-white md:border-l md:border-teal-600 md:pl-8">
-                            <div className="flex justify-start mb-3 ml-16">
+                            <div className="flex justify-start mb-3 ml-4 md:ml-16">
                               <div className="w-10 h-10 bg-opacity-20 rounded-full flex items-center justify-center">
                                 <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                               </div>
                             </div>
-                            <div className="text-left ml-16">
+                            <div className="text-left ml-4 md:ml-16">
                               <h3 className="text-lg font-bold mb-2">Certified Best</h3>
                               <p className="text-sm text-gray-200">Awarded for our commitment to quality</p>
                             </div>
@@ -330,7 +330,7 @@ export default function Home() {
                   </section>
 
                   {/* Contact Form Section */}
-                  <section id="contact-form" className="py-24 relative">
+                  <section id="contact-form" className="py-12 md:py-24 relative">
                     {/* Background Image */}
                     <div className="absolute inset-0 z-0 h-7/20">
                       <Image 
@@ -342,21 +342,21 @@ export default function Home() {
                       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-transparent"></div>
                     </div>
                     
-                    <div className="relative z-10 max-w-6xl mx-auto px-12">
-                      <div className="flex justify-center mt-16">
+                    <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-12">
+                      <div className="flex justify-center mt-8 md:mt-16">
                         {/* Contact Form with Embedded Image */}
-                        <div className="bg-[#00B0A8] p-12 shadow-2xl relative overflow-hidden w-full" style={{ minHeight: '600px' }}>
-                          <div className="grid lg:grid-cols-3 gap-8 items-start">
+                        <div className="bg-[#00B0A8] p-4 md:p-8 lg:p-12 shadow-2xl relative overflow-hidden w-full" style={{ minHeight: 'auto' }}>
+                          <div className="grid lg:grid-cols-3 gap-4 md:gap-8 items-start">
                             {/* Left Side - Form */}
-                            <div className="lg:col-span-2 space-y-4">
+                            <div className="lg:col-span-2 space-y-3 md:space-y-4">
                               {/* <h3 className="text-2xl font-bold text-white mb-6">Get In Touch</h3> */}
-                              <form className="space-y-4">
-                                <div className="grid grid-cols-2 gap-4">
+                              <form className="space-y-3 md:space-y-4">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                                   <div>
                                     <label className="block text-white text-sm font-medium mb-2">Name</label>
                                     <input 
                                       type="text" 
-                                      className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-teal-400 focus:outline-none"
+                                      className="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-teal-400 focus:outline-none text-sm md:text-base"
                                       placeholder="Name"
                                     />
                                   </div>
@@ -364,17 +364,17 @@ export default function Home() {
                                     <label className="block text-white text-sm font-medium mb-2">Email</label>
                                     <input 
                                       type="email" 
-                                      className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-teal-400 focus:outline-none"
+                                      className="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-teal-400 focus:outline-none text-sm md:text-base"
                                       placeholder="Email"
                                     />
                                   </div>
                                 </div>
-                                <div className="grid grid-cols-2 gap-4">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                                   <div>
                                     <label className="block text-white text-sm font-medium mb-2">Phone</label>
                                     <input 
                                       type="tel" 
-                                      className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 placeholder-gray-500 focus:ring-2 focus:ring-teal-400 focus:outline-none"
+                                      className="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-teal-400 focus:outline-none text-sm md:text-base"
                                       placeholder="Phone"
                                     />
                                   </div>
@@ -383,7 +383,7 @@ export default function Home() {
                                     <div className="relative">
                                       <input 
                                         type="date" 
-                                        className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-teal-400 focus:outline-none pr-10"
+                                        className="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-teal-400 focus:outline-none pr-10 text-sm md:text-base"
                                         placeholder="DD/MM/YYYY"
                                         defaultValue={new Date().toISOString().split('T')[0]}
                                       />
@@ -394,7 +394,7 @@ export default function Home() {
                                 <div>
                                   <label className="block text-white text-sm font-medium mb-2">Select Services</label>
                                   <div className="relative">
-                                    <select className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 focus:ring-2 focus:ring-teal-400 focus:outline-none appearance-none">
+                                    <select className="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg bg-white text-gray-800 focus:ring-2 focus:ring-teal-400 focus:outline-none appearance-none text-sm md:text-base">
                                       <option>Select Services</option>
                                       <option>Supported Living</option>
                                       <option>Mental Health Support</option>
@@ -410,14 +410,14 @@ export default function Home() {
                                   <label className="block text-white text-sm font-medium mb-2">Message</label>
                                   <textarea 
                                     rows={4}
-                                    className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-teal-400 focus:outline-none resize-none"
+                                    className="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg bg-white text-gray-800 placeholder-gray-500 focus:ring-2 focus:ring-teal-400 focus:outline-none resize-none text-sm md:text-base"
                                     placeholder="Message"
                                   ></textarea>
                                 </div>
                                 <div className="flex justify-center">
                                   <button 
                                     type="submit" 
-                                    className="w-100 bg-[#19017F] text-white px-4 py-2 rounded-full font-medium hover:bg-[#14015F] transition-colors"
+                                    className="w-full md:w-auto bg-[#19017F] text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-medium hover:bg-[#14015F] transition-colors text-sm md:text-base"
                                   >
                                     Submit
                                   </button>
@@ -426,13 +426,13 @@ export default function Home() {
                             </div>
 
                             {/* Right Side - Embedded Image */}
-                            <div className="relative mt-8">
+                            <div className="relative mt-6 md:mt-8 lg:mt-0">
                               <Image 
                                 src="/images/pexels-michael-burrows-7129052.jpg" 
                                 alt="Person writing in notebook with pen" 
                                 width={400}
                                 height={300}
-                                className="rounded-lg shadow-lg h-96 object-cover"
+                                className="rounded-lg shadow-lg h-48 md:h-64 lg:h-96 object-cover w-full"
                               />
                             </div>
                           </div>
@@ -443,13 +443,13 @@ export default function Home() {
 
                   {/* Testimonials Section */}
                   <section className="py-12 bg-white">
-                    <div className="max-w-6xl mx-auto px-12">
+                    <div className="max-w-6xl mx-auto px-4 md:px-12">
                       {/* Section Header */}
-                      <div className="text-center mb-16">
+                      <div className="text-center mb-8 md:mb-16">
                         <h2 className="text-base font-semibold text-gray-600 uppercase tracking-wider mb-4">TESTIMONIALS</h2>
                         <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
                           Our Clients Say
-                          <div className="w-40 h-1 bg-[#00B0A8] mt-2 mx-auto rounded-full"></div>
+                          <div className="w-32 md:w-40 h-1 bg-[#00B0A8] mt-2 mx-auto rounded-full"></div>
                         </h3>
                       </div>
 
@@ -458,26 +458,26 @@ export default function Home() {
                         {/* Navigation Arrows */}
                         <button 
                           onClick={() => setCurrentTestimonial((prev) => prev === 0 ? 2 : prev - 1)}
-                          className="absolute left-0 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-[#B0E7E4] rounded-full flex items-center justify-center hover:bg-[#004A47] transition-colors z-10"
+                          className="absolute left-2 md:left-0 top-1/2 transform -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-[#B0E7E4] rounded-full flex items-center justify-center hover:bg-[#004A47] transition-colors z-10"
                         >
-                          <svg className="w-6 h-6 text-[#00B0A8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-5 h-5 md:w-6 md:h-6 text-[#00B0A8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                           </svg>
                         </button>
                         
                         <button 
                           onClick={() => setCurrentTestimonial((prev) => prev === 2 ? 0 : prev + 1)}
-                          className="absolute right-0 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-[#B0E7E4] rounded-full flex items-center justify-center hover:bg-[#004A47] transition-colors z-10"
+                          className="absolute right-2 md:right-0 top-1/2 transform -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 bg-[#B0E7E4] rounded-full flex items-center justify-center hover:bg-[#004A47] transition-colors z-10"
                         >
-                          <svg className="w-6 h-6 text-[#00B0A8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-5 h-5 md:w-6 md:h-6 text-[#00B0A8]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                           </svg>
                         </button>
 
                         {/* Testimonial 1 */}
-                        <div className={`text-center px-16 transition-opacity duration-300 ${currentTestimonial === 0 ? 'opacity-100' : 'opacity-0 absolute inset-0'}`}>
+                        <div className={`text-center px-4 md:px-8 lg:px-16 transition-opacity duration-300 ${currentTestimonial === 0 ? 'opacity-100' : 'opacity-0 absolute inset-0'}`}>
                           {/* Profile Picture */}
-                          <div className="w-24 h-24 mx-auto mb-8">
+                          <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-6 md:mb-8">
                             <div className="w-full h-full rounded-full border-2 border-[#00B0A8] overflow-hidden">
                               <Image 
                                 src="/images/testimonial-profile-1.png" 
@@ -490,18 +490,18 @@ export default function Home() {
                           </div>
                           
                           {/* Quote */}
-                          <blockquote className="text-lg text-gray-700 leading-relaxed mb-6 italic px-32 py-6 bg-gray-50 rounded-lg">
+                          <blockquote className="text-base md:text-lg text-gray-700 leading-relaxed mb-4 md:mb-6 italic px-4 md:px-8 lg:px-32 py-4 md:py-6 bg-gray-50 rounded-lg">
                             &ldquo;Prime Living Lodge has been absolutely amazing for my brother. The staff are caring, professional, and truly understand his needs. He&apos;s never been happier or more independent.&rdquo;
                           </blockquote>
                           
                           {/* Name */}
-                          <p className="text-xl font-bold text-gray-900">Brooklyn Simmons</p>
+                          <p className="text-lg md:text-xl font-bold text-gray-900">Brooklyn Simmons</p>
                         </div>
 
                         {/* Testimonial 2 */}
-                        <div className={`text-center px-16 transition-opacity duration-300 ${currentTestimonial === 1 ? 'opacity-100' : 'opacity-0 absolute inset-0'}`}>
+                        <div className={`text-center px-4 md:px-8 lg:px-16 transition-opacity duration-300 ${currentTestimonial === 1 ? 'opacity-100' : 'opacity-0 absolute inset-0'}`}>
                           {/* Profile Picture */}
-                          <div className="w-24 h-24 mx-auto mb-8">
+                          <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-6 md:mb-8">
                             <div className="w-full h-full rounded-full border-2 border-[#00B0A8] overflow-hidden">
                               <Image 
                                 src="/images/testimonial-profile-1.png" 
@@ -514,18 +514,18 @@ export default function Home() {
                           </div>
                           
                           {/* Quote */}
-                          <blockquote className="text-lg text-gray-700 leading-relaxed mb-6 italic px-32 py-6 bg-gray-50 rounded-lg">
+                          <blockquote className="text-base md:text-lg text-gray-700 leading-relaxed mb-4 md:mb-6 italic px-4 md:px-8 lg:px-32 py-4 md:py-6 bg-gray-50 rounded-lg">
                             &ldquo;The level of care and attention my mother receives is exceptional. The team at Prime Living Lodge goes above and beyond to ensure her comfort and wellbeing every single day.&rdquo;
                           </blockquote>
                           
                           {/* Name */}
-                          <p className="text-xl font-bold text-gray-900">Sarah Johnson</p>
+                          <p className="text-lg md:text-xl font-bold text-gray-900">Sarah Johnson</p>
                         </div>
 
                         {/* Testimonial 3 */}
-                        <div className={`text-center px-16 transition-opacity duration-300 ${currentTestimonial === 2 ? 'opacity-100' : 'opacity-0 absolute inset-0'}`}>
+                        <div className={`text-center px-4 md:px-8 lg:px-16 transition-opacity duration-300 ${currentTestimonial === 2 ? 'opacity-100' : 'opacity-0 absolute inset-0'}`}>
                           {/* Profile Picture */}
-                          <div className="w-24 h-24 mx-auto mb-8">
+                          <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-6 md:mb-8">
                             <div className="w-full h-full rounded-full border-2 border-[#00B0A8] overflow-hidden">
                               <Image 
                                 src="/images/testimonial-profile-1.png" 
@@ -538,17 +538,17 @@ export default function Home() {
                           </div>
                           
                           {/* Quote */}
-                          <blockquote className="text-lg text-gray-700 leading-relaxed mb-6 italic px-32 py-6 bg-gray-50 rounded-lg">
+                          <blockquote className="text-base md:text-lg text-gray-700 leading-relaxed mb-4 md:mb-6 italic px-4 md:px-8 lg:px-32 py-4 md:py-6 bg-gray-50 rounded-lg">
                             &ldquo;I was worried about finding the right support for my son, but Prime Living Lodge has exceeded all expectations. The staff are like family and truly care about his development.&rdquo;
                           </blockquote>
                           
                           {/* Name */}
-                          <p className="text-xl font-bold text-gray-900">Michael Chen</p>
+                          <p className="text-lg md:text-xl font-bold text-gray-900">Michael Chen</p>
                         </div>
                       </div>
 
                       {/* Pagination Dots */}
-                      <div className="flex justify-center mt-8 space-x-2">
+                      <div className="flex justify-center mt-6 md:mt-8 space-x-2">
                         <button 
                           onClick={() => setCurrentTestimonial(0)}
                           className={`w-3 h-3 rounded-full transition-colors ${currentTestimonial === 0 ? 'bg-[#00B0A8]' : 'bg-gray-300'}`}
