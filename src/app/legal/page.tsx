@@ -9,7 +9,7 @@ export default function LegalPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Spacer for fixed header */}
-      <div className="h-12 md:h-16"></div>
+      <div className="h-24 md:h-32"></div>
       
       <section className="py-6 md:py-8 lg:py-12">
         <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
