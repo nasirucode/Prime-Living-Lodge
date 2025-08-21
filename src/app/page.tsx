@@ -24,7 +24,7 @@ export default function Home() {
                     <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
                     
                     <div className="relative max-w-6xl mx-auto px-12 h-full flex items-center">
-                                              <div className="text-white max-w-2xl">
+                        <div className="text-white max-w-2xl">
                           <h2 className="text-2xl md:text-3xl font-bold mb-3 leading-tight">
                             <div>LIVING A HEALTHY LIFE</div>
                             <div>WITH ALL DEMANDS</div>
@@ -80,16 +80,11 @@ export default function Home() {
                   </section>
 
                   {/* Who We Are Section */}
-                  <section className="py-24">
+                  <section className="py-12">
                     <div className="max-w-6xl mx-auto px-12">
                       {/* Section Header */}
                       <div 
-                        className={`text-center mb-32 transition-all duration-800 ease-out ${
-                          whoWeAreContentRef.isVisible 
-                            ? 'opacity-100 translate-y-0' 
-                            : 'opacity-0 translate-y-8'
-                        }`}
-                      >
+                        className="text-center mb-32">
                         <h2 className="text-base font-semibold text-teal-800 uppercase tracking-wider mb-4">WHO WE ARE</h2>
                         <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
                           Establishing Trust, One
