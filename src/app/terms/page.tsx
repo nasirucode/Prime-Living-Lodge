@@ -1,85 +1,34 @@
 "use client";
-
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import TermSidebar from '@/components/TermSidebar';
 
 export default function Terms() {
-  const pathname = usePathname();
-
   return (
-    <div className="min-h-screen bg-white">
-      {/* Spacer to prevent content from being hidden behind fixed header */}
-      {/* <div className="h-12 md:h-16"></div> */}
+    <div className="min-h-screen bg-gray-50">
+      {/* Spacer for fixed header */}
+      <div className="h-24 md:h-32"></div>
       
       {/* Main Content Section */}
-      <section className="py-8 md:py-12 lg:py-24">
-        <div className="max-w-6xl mx-auto px-4 md:px-8 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-6 gap-6 md:gap-8 items-start">
+      <section className="py-6 md:py-8 lg:py-12">
+        <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-6 gap-6 md:gap-8 lg:gap-12">
             {/* Left Sidebar - Navigation */}
-            <div className="lg:col-span-2 order-2 lg:order-1">
-              <div className="bg-gray-50 rounded-lg p-4 md:p-6 lg:sticky lg:top-8">
-                {/* <h3 className="text-lg font-semibold text-gray-900 mb-4">Legal Pages</h3> */}
-                <nav className="space-y-2">
-                  <Link 
-                    href="/terms" 
-                    className={`flex items-center justify-between w-full px-3 md:px-4 py-2 md:py-3 rounded-lg transition-colors text-sm md:text-base ${
-                      pathname === '/terms' 
-                        ? 'bg-teal-800 text-white' 
-                        : 'bg-teal-100 text-gray-700 hover:bg-teal-200'
-                    }`}
-                  >
-                    <span>Terms and Conditions</span>
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                  
-                  <Link 
-                    href="/privacy" 
-                    className={`flex items-center justify-between w-full px-3 md:px-4 py-2 md:py-3 rounded-lg transition-colors text-sm md:text-base ${
-                      pathname === '/privacy' 
-                        ? 'bg-teal-800 text-white' 
-                        : 'bg-teal-100 text-gray-700 hover:bg-teal-200'
-                    }`}
-                  >
-                    <span>Privacy Policy</span>
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                  
-                  <Link 
-                    href="/legal" 
-                    className={`flex items-center justify-between w-full px-3 md:px-4 py-2 md:py-3 rounded-lg transition-colors text-sm md:text-base ${
-                      pathname === '/legal' 
-                        ? 'bg-teal-800 text-white' 
-                        : 'bg-teal-100 text-gray-700 hover:bg-teal-200'
-                    }`}
-                  >
-                    <span>Legal & Regulatory Information</span>
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                </nav>
-              </div>
-            </div>
+            <TermSidebar />
 
             {/* Right Content Area - Terms and Conditions */}
             <div className="lg:col-span-4 order-1 lg:order-2">
               <div className="bg-white rounded-lg">
-                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-teal-800 mb-4 md:mb-6 text-center">
+                <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-teal-800 mb-3 md:mb-4 lg:mb-6 text-center px-4 md:px-0">
                   Website Terms and Condition
                 </h2>
                 
-                <p className="text-gray-600 mb-6 md:mb-8 text-sm md:text-base lg:text-lg text-center px-4 md:px-0">
+                <p className="text-gray-600 mb-4 md:mb-6 lg:mb-8 text-sm md:text-base lg:text-lg text-center px-4 md:px-0">
                   By accessing <span className="underline">www.primelivinglodge.co.uk</span>, you agree to be bound by the following terms and conditions:
                 </p>
 
                 <div className="space-y-3 md:space-y-4 text-justify px-4 md:px-0">
                   {/* Term 1 */}
-                  <div className="border-l-4 border-teal-300 pl-3 md:pl-6">
-                    <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">
+                  <div className="border-l-4 border-teal-300 pl-2 md:pl-3 lg:pl-6">
+                    <h3 className="text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-2 md:mb-3">
                       1. Use of Website
                     </h3>
                     <p className="text-sm md:text-base text-gray-700 leading-relaxed">
@@ -88,8 +37,8 @@ export default function Terms() {
                   </div>
 
                   {/* Term 2 */}
-                  <div className="border-l-4 border-teal-300 pl-3 md:pl-6">
-                    <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">
+                  <div className="border-l-4 border-teal-300 pl-2 md:pl-3 lg:pl-6">
+                    <h3 className="text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-2 md:mb-3">
                       2. Content Accuracy
                     </h3>
                     <p className="text-sm md:text-base text-gray-700 leading-relaxed">
@@ -98,8 +47,8 @@ export default function Terms() {
                   </div>
 
                   {/* Term 3 */}
-                  <div className="border-l-4 border-teal-300 pl-3 md:pl-6">
-                    <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">
+                  <div className="border-l-4 border-teal-300 pl-2 md:pl-3 lg:pl-6">
+                    <h3 className="text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-2 md:mb-3">
                       3. Intellectual Property
                     </h3>
                     <p className="text-sm md:text-base text-gray-700 leading-relaxed">
@@ -108,8 +57,8 @@ export default function Terms() {
                   </div>
 
                   {/* Term 4 */}
-                  <div className="border-l-4 border-teal-300 pl-3 md:pl-6">
-                    <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">
+                  <div className="border-l-4 border-teal-300 pl-2 md:pl-3 lg:pl-6">
+                    <h3 className="text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-2 md:mb-3">
                       4. External Links
                     </h3>
                     <p className="text-sm md:text-base text-gray-700 leading-relaxed">
@@ -118,8 +67,8 @@ export default function Terms() {
                   </div>
 
                   {/* Term 5 */}
-                  <div className="border-l-4 border-teal-300 pl-3 md:pl-6">
-                    <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">
+                  <div className="border-l-4 border-teal-300 pl-2 md:pl-3 lg:pl-6">
+                    <h3 className="text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-2 md:mb-3">
                       5. Liability
                     </h3>
                     <p className="text-sm md:text-base text-gray-700 leading-relaxed">
@@ -128,8 +77,8 @@ export default function Terms() {
                   </div>
 
                   {/* Term 6 */}
-                  <div className="border-l-4 border-teal-300 pl-3 md:pl-6">
-                    <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">
+                  <div className="border-l-4 border-teal-300 pl-2 md:pl-3 lg:pl-6">
+                    <h3 className="text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-2 md:mb-3">
                       6. Changes to Terms
                     </h3>
                     <p className="text-sm md:text-base text-gray-700 leading-relaxed">
@@ -138,8 +87,8 @@ export default function Terms() {
                   </div>
 
                   {/* Term 7 */}
-                  <div className="border-l-4 border-teal-300 pl-3 md:pl-6">
-                    <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">
+                  <div className="border-l-4 border-teal-300 pl-2 md:pl-3 lg:pl-6">
+                    <h3 className="text-base md:text-lg lg:text-xl font-bold text-gray-900 mb-2 md:mb-3">
                       7. Governing Law
                     </h3>
                     <p className="text-sm md:text-base text-gray-700 leading-relaxed">
@@ -148,7 +97,7 @@ export default function Terms() {
                   </div>
                 </div>
 
-                <div className="mt-6 md:mt-8 pt-4 md:pt-6 border-t border-gray-200 px-4 md:px-0">
+                <div className="mt-4 md:mt-6 lg:mt-8 pt-3 md:pt-4 lg:pt-6 border-t border-gray-200 px-4 md:px-0">
                   <p className="text-xs md:text-sm text-gray-500 text-center">
                     Last updated: {new Date().toLocaleDateString('en-GB', { 
                       day: 'numeric', 
