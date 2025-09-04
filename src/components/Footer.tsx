@@ -3,9 +3,11 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
+  const pathname = usePathname();
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
@@ -74,20 +76,80 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-xl font-semibold text-white">Explore</h3>
             <div className="flex flex-col space-y-3">
-              <Link href="/" className="text-gray-200 hover:text-white transition-colors border-b-2 border-transparent hover:border-teal-400 pb-1">
+              <Link 
+                href="/" 
+                className={`transition-colors relative group pb-1 ${
+                  pathname === '/' 
+                    ? 'text-white' 
+                    : 'text-gray-200 hover:text-white'
+                }`}
+              >
                 Home
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-teal-400 transition-all duration-300 ${
+                  pathname === '/' 
+                    ? 'w-8' 
+                    : 'w-0 group-hover:w-8'
+                }`}></span>
               </Link>
-              <Link href="/who-we-are" className="text-gray-200 hover:text-white transition-colors">
+              <Link 
+                href="/who-we-are" 
+                className={`transition-colors relative group pb-1 ${
+                  pathname.startsWith('/who-we-are') 
+                    ? 'text-white' 
+                    : 'text-gray-200 hover:text-white'
+                }`}
+              >
                 Who We Are
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-teal-400 transition-all duration-300 ${
+                  pathname.startsWith('/who-we-are') 
+                    ? 'w-8' 
+                    : 'w-0 group-hover:w-8'
+                }`}></span>
               </Link>
-              <Link href="/our-services" className="text-gray-200 hover:text-white transition-colors">
+              <Link 
+                href="/our-services" 
+                className={`transition-colors relative group pb-1 ${
+                  pathname.startsWith('/our-services') 
+                    ? 'text-white' 
+                    : 'text-gray-200 hover:text-white'
+                }`}
+              >
                 Our Services
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-teal-400 transition-all duration-300 ${
+                  pathname.startsWith('/our-services') 
+                    ? 'w-8' 
+                    : 'w-0 group-hover:w-8'
+                }`}></span>
               </Link>
-              <Link href="/careers" className="text-gray-200 hover:text-white transition-colors">
+              <Link 
+                href="/careers" 
+                className={`transition-colors relative group pb-1 ${
+                  pathname === '/careers' 
+                    ? 'text-white' 
+                    : 'text-gray-200 hover:text-white'
+                }`}
+              >
                 Careers
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-teal-400 transition-all duration-300 ${
+                  pathname === '/careers' 
+                    ? 'w-8' 
+                    : 'w-0 group-hover:w-8'
+                }`}></span>
               </Link>
-              <Link href="/contact-us" className="text-gray-200 hover:text-white transition-colors">
+              <Link 
+                href="/contact-us" 
+                className={`transition-colors relative group pb-1 ${
+                  pathname === '/contact-us' 
+                    ? 'text-white' 
+                    : 'text-gray-200 hover:text-white'
+                }`}
+              >
                 Contact Us
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-teal-400 transition-all duration-300 ${
+                  pathname === '/contact-us' 
+                    ? 'w-8' 
+                    : 'w-0 group-hover:w-8'
+                }`}></span>
               </Link>
             </div>
           </div>

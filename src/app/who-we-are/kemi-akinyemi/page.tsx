@@ -46,7 +46,7 @@ export default function KemiAkinyemi() {
               <h2 className="text-4xl font-bold text-gray-900 mt-4">Professional Skills</h2>
               
               <div className="space-y-6">
-                <p className="text-xl text-gray-700 leading-relaxed">
+                <p className="text-xl text-gray-700 leading-relaxed text-justify">
                   HR Director at Prime Living Lodge — dedicated to building and nurturing a workforce that embodies our values of compassion, excellence, and innovation. With extensive experience in human resources management within the healthcare sector, I specialize in talent acquisition, employee development, and creating inclusive workplace cultures. My passion lies in supporting our team members to reach their full potential while ensuring we deliver exceptional care to our clients. I believe in the power of people and enjoy fostering meaningful connections within our organization.
                 </p>
                 
@@ -112,7 +112,7 @@ export default function KemiAkinyemi() {
                   </svg>
                 </a>
               </div>
-              <span className="text-gray-900 font-medium text-sm">James Albert</span>
+              <span className="text-gray-900 font-medium text-sm">John Doe</span>
             </div>
           </div>
         </div>

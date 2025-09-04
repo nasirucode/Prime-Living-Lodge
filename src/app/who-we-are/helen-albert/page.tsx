@@ -10,7 +10,7 @@ export default function HelenAlbert() {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 max-w-6xl mx-auto px-12 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white">
-            Helen Albert
+            Jane Doe
           </h1>
         </div>
       </section>
@@ -25,7 +25,7 @@ export default function HelenAlbert() {
                 {/* Profile Image */}
                 <div className="relative">
                   <Image 
-                    src="/images/pexels-augustocarneirojr-30479371.jpg" 
+                    src="/images/female.webp" 
                     alt="Helen Albert - Support Worker" 
                     width={400}
                     height={500}
@@ -35,7 +35,7 @@ export default function HelenAlbert() {
                 
                 {/* Profile Info */}
                 <div className="bg-[#003E3B] p-6 text-center">
-                  <h2 className="text-xl font-bold text-white mb-2">Helen Albert</h2>
+                  <h2 className="text-xl font-bold text-white mb-2">Jane Doe</h2>
                   <p className="text-white text-sm">Support Worker</p>
                 </div>
               </div>
@@ -46,7 +46,7 @@ export default function HelenAlbert() {
               <h2 className="text-4xl font-bold text-gray-900 mt-4">Professional Skills</h2>
               
               <div className="space-y-6">
-                <p className="text-xl text-gray-700 leading-relaxed">
+                <p className="text-xl text-gray-700 leading-relaxed text-justify">
                   Support Worker at Prime Living Lodge — passionate about making a positive difference in people&apos;s lives through compassionate care and dedicated support. I specialize in working with individuals with learning disabilities and physical challenges, helping them develop life skills and achieve greater independence. My approach is centered around building meaningful relationships, understanding individual needs, and creating a supportive environment where everyone feels valued and respected. I believe in the importance of patience, creativity, and consistent encouragement in helping people reach their full potential.
                 </p>
                 

@@ -43,7 +43,7 @@ export default function SubstanceMisuse() {
               {/* Main Image */}
               <div className="mt-8">
                 <Image 
-                  src="/images/pexels-cristian-rojas-8405551.jpg" 
+                  src="/images/person-sharing-feelings-emotions-therapy-session.jpg" 
                   alt="Hands holding rolled paper with green leaves representing recovery and growth" 
                   width={600}
                   height={400}

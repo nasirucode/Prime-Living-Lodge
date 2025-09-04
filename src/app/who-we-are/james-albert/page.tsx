@@ -10,7 +10,7 @@ export default function JamesAlbert() {
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 max-w-6xl mx-auto px-12 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white">
-            James Albert
+            John Doe
           </h1>
         </div>
       </section>
@@ -25,17 +25,17 @@ export default function JamesAlbert() {
                 {/* Profile Image */}
                 <div className="relative">
                   <Image 
-                    src="/images/pexels-max-weiss-erfahrungen-945937528-20097456.jpg" 
+                    src="/images/male.jpg" 
                     alt="James Albert - Senior Support Worker" 
-                    width={400}
-                    height={500}
+                    width={600}
+                    height={800}
                     className="w-full h-auto object-cover"
                   />
                 </div>
                 
                 {/* Profile Info */}
                 <div className="bg-[#003E3B] p-6 text-center">
-                  <h2 className="text-xl font-bold text-white mb-2">James Albert</h2>
+                  <h2 className="text-xl font-bold text-white mb-2">John Doe</h2>
                   <p className="text-white text-sm">Senior Support Worker</p>
                 </div>
               </div>
@@ -46,7 +46,7 @@ export default function JamesAlbert() {
               <h2 className="text-4xl font-bold text-gray-900 mt-4">Professional Skills</h2>
               
               <div className="space-y-6">
-                <p className="text-xl text-gray-700 leading-relaxed">
+                <p className="text-xl text-gray-700 leading-relaxed text-justify">
                   Senior Support Worker at Prime Living Lodge — committed to providing exceptional care and support to individuals with diverse needs. With years of experience in mental health support and learning disabilities, I specialize in creating safe, nurturing environments where people can thrive. My approach focuses on building trust, promoting independence, and celebrating each person&apos;s unique abilities. I believe in the importance of patience, empathy, and consistent support in helping individuals achieve their goals and live fulfilling lives within their communities.
                 </p>
                 
@@ -112,7 +112,7 @@ export default function JamesAlbert() {
                 </svg>
                 </a>
               </div>
-              <span className="text-gray-900 font-medium text-sm">Helen Albert</span>
+              <span className="text-gray-900 font-medium text-sm">Jane Doe</span>
             </div>
           </div>
         </div>

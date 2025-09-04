@@ -353,7 +353,7 @@ export default function Home() {
                   {/* Contact Form Section */}
                   <section id="contact-form" className="py-12 md:py-24 relative">
                     {/* Background Image */}
-                    <div className="absolute inset-0 z-0 h-8/24">
+                    <div className="absolute inset-0 z-0 h-10/24">
                       <Image 
                         src="/images/hands-4344711_1280.jpg" 
                         alt="Older person&apos;s hands on textured surface" 
@@ -374,16 +374,19 @@ export default function Home() {
                             : 'opacity-0 translate-y-16'
                         }`}
                       >
-                        <h2 className="text-base font-semibold text-white uppercase tracking-wider mb-4">MAKE AN APPOINTMENT</h2>
-                        <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
-                          The Golden Age of Life is Old Age
+                        <h1 className="text-xl md:text-2xl font-bold text-white uppercase tracking-wider mb-4 relative pb-2">
+                          MAKE AN APPOINTMENT
+                          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-teal-400"></div>
+                        </h1>
+                        <h3 className="text-lg md:text-xl text-white mb-2 text-center text-italic">
+                        “At Prime Living Lodge our commitment is to build an inclusive and diverse workforce. Fostering respect and providing opportunities for team members to grow and thrive. We promote work-life balance for a healthy, stable, and content staff. Our beliefs are a strong and stable workforce can focus on providing the best care and support to your family and loved ones, which is our utmost priority.”
                         </h3>
-                        <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
+                        {/* <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
                           <span className="relative pb-2">
                             Make the Most of It
                             <div className="absolute bottom-0 left-0 w-full h-1 bg-[#00B0A8]"></div>
                           </span>
-                        </h3>
+                        </h3> */}
                       </div>
                       <div className="flex justify-center mt-8 md:mt-16">
                         {/* Contact Form with Embedded Image */}
@@ -546,7 +549,7 @@ export default function Home() {
                           <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-6 md:mb-8">
                             <div className="w-full h-full rounded-full border-2 border-[#00B0A8] overflow-hidden">
                               <Image 
-                                src="/images/testimonial-profile-1.png" 
+                                src="/images/male.jpg" 
                                 alt="Sarah Johnson" 
                                 width={96}
                                 height={96}
@@ -570,7 +573,7 @@ export default function Home() {
                           <div className="w-20 h-20 md:w-24 md:h-24 mx-auto mb-6 md:mb-8">
                             <div className="w-full h-full rounded-full border-2 border-[#00B0A8] overflow-hidden">
                               <Image 
-                                src="/images/testimonial-profile-1.png" 
+                                src="/images/female.webp" 
                                 alt="Michael Chen" 
                                 width={96}
                                 height={96}

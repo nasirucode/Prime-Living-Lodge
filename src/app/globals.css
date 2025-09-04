@@ -27,4 +27,33 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Fix blurry text in form inputs */
+input, textarea, select {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: 16px; /* Prevent zoom on mobile */
+  color: #1f2937; /* Dark gray text color for better readability */
+}
+
+/* Ensure consistent text rendering across all form elements */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f2937; /* Dark gray text color */
+}
+
+/* Placeholder text color */
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af; /* Light gray for placeholder text */
 }

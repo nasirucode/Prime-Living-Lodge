@@ -113,7 +113,7 @@ export default function OurServices() {
               <div className="bg-white rounded-lg overflow-hidden shadow-sm md:shadow-md">
                 <div className="relative">
                   <Image 
-                    src="/images/pexels-cristian-rojas-8405551.jpg" 
+                    src="/images/person-sharing-feelings-emotions-therapy-session.jpg" 
                     alt="Hands holding rolled paper with green leaves" 
                     width={300}
                     height={200}
@@ -163,6 +163,37 @@ export default function OurServices() {
                     Practical And Emotional Support To Help Individuals Live Full Empowered Lives.
                   </p>
                   <a href="/our-services/learning-physical-disabilities" className="inline-flex items-center text-teal-600 hover:text-teal-800 font-medium text-xs md:text-sm">
+                    Learn More
+                    <svg className="w-3 h-3 md:w-4 md:h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              {/* Card 5 - Resettlement and Community Integration */}
+              <div className="bg-white rounded-lg overflow-hidden shadow-sm md:shadow-md">
+                <div className="relative">
+                  <Image 
+                    src="/images/pexels-rdne-6647024.jpg" 
+                    alt="Group of diverse people working together in community setting" 
+                    width={300}
+                    height={200}
+                    className="w-full h-40 md:h-48 object-cover"
+                  />
+                </div>
+                <div className="p-3 md:p-4">
+                  <div className="flex items-center mb-2">
+                    <svg className="w-4 h-4 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <span className="text-xs text-gray-600">Community Integration</span>
+                  </div>
+                  <h4 className="text-base md:text-lg font-bold text-gray-900 mb-2">Resettlement and Community Integration</h4>
+                  <p className="text-xs md:text-sm text-gray-600 leading-relaxed mb-3">
+                    Comprehensive support for individuals transitioning into community life with personalized resettlement plans.
+                  </p>
+                  <a href="/our-services/resettlement" className="inline-flex items-center text-teal-600 hover:text-teal-800 font-medium text-xs md:text-sm">
                     Learn More
                     <svg className="w-3 h-3 md:w-4 md:h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

@@ -34,7 +34,7 @@ export default function FAQSection() {
             {openFAQ === 1 && (
               <div className="px-6 pb-6">
                 <p className="text-black group-hover:text-white leading-relaxed transition-colors">
-                  Yes, absolutely! You can contact us through multiple channels. Call us at 01234 567890, email us at info@primelivinglodge.co.uk, or fill out our contact form on this website. Our team is available Monday to Friday, 9 AM to 5 PM, and we&apos;ll get back to you within 24 hours.
+                  Yes, absolutely! You can contact us through multiple channels. Call us at 07769227686, email us at info@primelivinglodge.co.uk, or fill out our contact form on this website. Our team is available Monday to Friday, 9 AM to 5 PM, and we&apos;ll get back to you within 24 hours.
                 </p>
               </div>
             )}

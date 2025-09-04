@@ -248,7 +248,7 @@ export default function WhoWeAre() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col group cursor-pointer transition-all duration-500 hover:shadow-xl relative">
               <div className="relative">
                 <Image 
-                  src="/images/pexels-max-weiss-erfahrungen-945937528-20097456.jpg" 
+                  src="/images/male.jpg" 
                   alt="James Albert - Senior Support Worker" 
                   width={300}
                   height={300}
@@ -258,7 +258,7 @@ export default function WhoWeAre() {
               
               {/* Default Content */}
               <div className="bg-[#003E3B] p-6 text-center flex-1 flex flex-col justify-center transition-transform duration-500 group-hover:-translate-y-16">
-                <h4 className="text-lg font-bold text-white mb-1">JAMES ALBERT</h4>
+                <h4 className="text-lg font-bold text-white mb-1">JOHN DOE</h4>
                 <p className="text-white text-sm font-normal">SENIOR SUPPORT WORKER</p>
               </div>
               
@@ -266,7 +266,7 @@ export default function WhoWeAre() {
               <div className="absolute bottom-0 left-0 right-0 bg-[#003E3B] p-6 transform translate-y-full transition-transform duration-500 group-hover:translate-y-0">
                 <div className="text-center text-white">
                   {/* Name */}
-                  <h4 className="text-lg font-bold text-white mb-2">JAMES ALBERT</h4>
+                  <h4 className="text-lg font-bold text-white mb-2">JOHN DOE</h4>
                   
                   {/* Appointment/Role */}
                   <p className="text-white text-sm font-normal mb-4">SENIOR SUPPORT WORKER</p>
@@ -307,7 +307,7 @@ export default function WhoWeAre() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col group cursor-pointer transition-all duration-500 hover:shadow-xl relative">
               <div className="relative">
                 <Image 
-                  src="/images/pexels-augustocarneirojr-30479371.jpg" 
+                  src="/images/female.webp" 
                   alt="Helen Albert - Support Worker" 
                   width={300}
                   height={300}
@@ -317,7 +317,7 @@ export default function WhoWeAre() {
               
               {/* Default Content */}
               <div className="bg-[#003E3B] p-6 text-center flex-1 flex flex-col justify-center transition-transform duration-500 group-hover:-translate-y-16">
-                <h4 className="text-lg font-bold text-white mb-1">HELEN ALBERT</h4>
+                <h4 className="text-lg font-bold text-white mb-1">JANE DOE</h4>
                 <p className="text-white text-sm font-normal">SUPPORT WORKER</p>
               </div>
               
@@ -325,7 +325,7 @@ export default function WhoWeAre() {
               <div className="absolute bottom-0 left-0 right-0 bg-[#003E3B] p-6 transform translate-y-full transition-transform duration-500 group-hover:translate-y-0">
                 <div className="text-center text-white">
                   {/* Name */}
-                  <h4 className="text-lg font-bold text-white mb-2">HELEN ALBERT</h4>
+                  <h4 className="text-lg font-bold text-white mb-2">JANE DOE</h4>
                   
                   {/* Appointment/Role */}
                   <p className="text-white text-sm font-normal mb-4">SUPPORT WORKER</p>

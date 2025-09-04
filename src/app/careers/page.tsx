@@ -98,6 +98,12 @@ export default function Careers() {
                         </svg>
                         <span className="text-sm md:text-base text-gray-700">Support Worker</span>
                       </div>
+                      <div className="flex items-center">
+                        <svg className="w-4 h-4 md:w-5 md:h-5 text-green-600 mr-2 md:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-sm md:text-base text-gray-700">Administrative Staff</span>
+                      </div>
                     </div>
                   </div>
 
@@ -125,12 +131,12 @@ export default function Careers() {
                     <select
                       id="jobRole"
                       name="jobRole"
-                      className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm md:text-base"
+                      className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-base text-gray-900"
                     >
                       <option value="">Job role</option>
-                      <option value="care-manager">Care Manager</option>
+                      <option value="care-manager">Care Home Manager</option>
+                      <option value="senior-support-worker">Senior support worker</option>
                       <option value="support-worker">Support Worker</option>
-                      <option value="senior-support-worker">Senior Support Worker</option>
                       <option value="admin">Administrative Staff</option>
                     </select>
                   </div>
@@ -147,7 +153,7 @@ export default function Careers() {
                         name="firstName"
                         value={formData.firstName}
                         onChange={handleInputChange}
-                        className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm md:text-base"
+                        className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-base text-gray-900"
                         required
                       />
                     </div>
@@ -161,7 +167,7 @@ export default function Careers() {
                         name="lastName"
                         value={formData.lastName}
                         onChange={handleInputChange}
-                        className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm md:text-base"
+                        className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-base text-gray-900"
                         required
                       />
                     </div>
@@ -179,7 +185,7 @@ export default function Careers() {
                         name="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm md:text-base"
+                        className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-base text-gray-900"
                         required
                       />
                     </div>
@@ -193,7 +199,7 @@ export default function Careers() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm md:text-base"
+                        className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-base text-gray-900"
                         required
                       />
                     </div>
@@ -210,7 +216,7 @@ export default function Careers() {
                       name="city"
                       value={formData.city}
                       onChange={handleInputChange}
-                      className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm md:text-base"
+                      className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-base"
                       required
                     />
                   </div>
@@ -227,7 +233,7 @@ export default function Careers() {
                       onChange={handleInputChange}
                       rows={4}
                       placeholder="Your Message here"
-                      className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-sm md:text-base resize-none"
+                      className="w-full px-3 py-2 md:py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-base resize-none"
                       required
                     ></textarea>
                   </div>
@@ -258,7 +264,7 @@ export default function Careers() {
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="w-full bg-blue-900 text-white py-3 md:py-4 px-6 rounded-md font-medium hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 text-sm md:text-base"
+                    className="w-full bg-blue-900 text-white py-3 md:py-4 px-6 rounded-md font-medium hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 text-base"
                   >
                     Subscribe Now
                   </button>
