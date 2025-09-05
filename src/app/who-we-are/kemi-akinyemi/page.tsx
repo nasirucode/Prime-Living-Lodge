@@ -106,13 +106,13 @@ export default function KemiAkinyemi() {
             <div className="absolute right-12 flex flex-col items-center gap-2">
               <div className="flex items-center gap-2">
                 <span className="text-gray-900 font-medium">NEXT</span>
-                <a href="/who-we-are/james-albert" className="w-12 h-12 bg-[#003E3B] rounded-full flex items-center justify-center hover:bg-[#002A28] transition-colors">
+                <a href="/who-we-are/bukola-temilade" className="w-12 h-12 bg-[#003E3B] rounded-full flex items-center justify-center hover:bg-[#002A28] transition-colors">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </a>
               </div>
-              <span className="text-gray-900 font-medium text-sm">John Doe</span>
+              <span className="text-gray-900 font-medium text-sm">Bukola Temilade</span>
             </div>
           </div>
         </div>
