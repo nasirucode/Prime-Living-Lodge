@@ -32,6 +32,17 @@ export default function LearningPhysicalDisabilities() {
               <h2 className="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-teal-300 w-fit">
                 LEARNING & PHYSICAL DISABILITIES SUPPORT
               </h2>
+
+              {/* Main Image */}
+              <div className="mt-8">
+                <Image 
+                  src="/images/disabled-man-wheelchair-playing-basketball-with-his-friends.jpg" 
+                  alt="Person holding colorful jigsaw puzzle pieces" 
+                  width={600}
+                  height={400}
+                  className="w-full h-80 object-cover rounded-lg shadow-lg"
+                />
+              </div>
               
               {/* Service Description */}
               <div className="space-y-4 text-gray-600 leading-relaxed">
@@ -43,7 +54,7 @@ export default function LearningPhysicalDisabilities() {
               {/* Main Image */}
               <div className="mt-8">
                 <Image 
-                  src="/images/dementia care.jpg" 
+                  src="/images/people-working-together-side-view.jpg" 
                   alt="Support worker assisting person with physical disability" 
                   width={600}
                   height={400}

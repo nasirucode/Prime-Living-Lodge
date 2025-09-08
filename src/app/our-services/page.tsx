@@ -144,7 +144,7 @@ export default function OurServices() {
               <div className="bg-white rounded-lg overflow-hidden shadow-sm md:shadow-md">
                 <div className="relative">
                   <Image 
-                    src="/images/dementia care.jpg" 
+                    src="/images/people-working-together-side-view.jpg" 
                     alt="Two pairs of hands gently clasped together" 
                     width={300}
                     height={200}
