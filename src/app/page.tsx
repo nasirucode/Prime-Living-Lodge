@@ -25,10 +25,8 @@ export default function Home() {
                     
                     <div className="relative max-w-6xl mx-auto px-12 h-full flex items-center">
                         <div className="text-white max-w-2xl">
-                          <h2 className="text-2xl md:text-3xl font-bold mb-3 leading-tight">
-                            <div>LIVING A HEALTHY LIFE</div>
-                            <div>WITH ALL DEMANDS</div>
-                            <div>FULFILLED BY US</div>
+                          <h2 className="text-2xl md:text-3xl font-bold mb-3 leading-tight uppercase">
+                            <div>Prime Living Lodge – Empowering independence, enriching lives. Your journey, your choice, your meaningful life.</div>
                           </h2>
                           <p className="text-base text-gray-200 mb-4 leading-relaxed">
                             With the right care and support, people living with mental health conditions can live and play an active role in their local community.
