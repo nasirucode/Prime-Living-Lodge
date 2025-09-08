@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
                                                             {/* Hero Section */}
-                  <section className="relative bg-cover bg-center bg-no-repeat py-20 min-h-[500px]" style={{ backgroundImage: 'url("/images/pexels-olly-3768131.jpg")' }}>
+                  <section className="relative bg-cover bg-center bg-no-repeat py-20 min-h-[500px]" style={{ backgroundImage: 'url("/images/banner1.jpg")' }}>
                     {/* Gradient Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
                     
