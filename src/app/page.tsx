@@ -251,7 +251,7 @@ export default function Home() {
                       </div>
 
                       {/* Service Cards Grid */}
-                      <div className="grid md:grid-cols-3 gap-8">
+                      <div className="grid md:grid-cols-2 gap-8">
                         {/* Card 1: Supported Living */}
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                           <div>
@@ -337,6 +337,37 @@ export default function Home() {
                               Practical And Emotional Support To Help Individuals Live Full, Empowered Lives.
                             </p>
                             <a href="/our-services/learning-physical-disabilities" className="inline-flex items-center px-6 py-4 border-2 border-[#19017F] text-[#19017F] bg-white rounded-lg font-medium hover:bg-[#19017F] hover:text-white transition-colors">
+                              Learn More
+                              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+
+                        {/* Card 4: Supported Accommodation */}
+                        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                          <div>
+                            <Image
+                              src="/images/people-1492052_1280.jpg"
+                              alt="Adults supported in the community"
+                              width={400}
+                              height={300}
+                              className="w-full h-48 object-cover rounded-b-lg"
+                            />
+                          </div>
+                          <div className="p-6">
+                            <div className="flex items-center mb-3">
+                              <svg className="w-5 h-5 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                              <span className="text-sm text-gray-600">Flexible support</span>
+                            </div>
+                            <h4 className="text-xl font-bold text-gray-900 mb-3">Supported Accommodation</h4>
+                            <p className="text-gray-600 leading-relaxed mb-4">
+                              High-quality supported accommodation with tailored support from a few hours a week to 24-hour care, focused on independence and community living.
+                            </p>
+                            <a href="/our-services/supported-accommodation" className="inline-flex items-center px-6 py-4 border-2 border-[#19017F] text-[#19017F] bg-white rounded-lg font-medium hover:bg-[#19017F] hover:text-white transition-colors">
                               Learn More
                               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -440,9 +471,11 @@ export default function Home() {
                                     <select className="w-full px-3 md:px-4 py-2 md:py-3 rounded-lg bg-white text-gray-800 focus:ring-2 focus:ring-teal-400 focus:outline-none appearance-none text-sm md:text-base">
                                       <option>Select Services</option>
                                       <option>Supported Living</option>
+                                      <option>Supported Accommodation</option>
                                       <option>Mental Health Support</option>
-                                      <option>Learning Disabilities</option>
-                                      <option>Physical Disabilities</option>
+                                      <option>Learning And Physical Disabilities</option>
+                                      <option>Substance Misuse And Recovery Support</option>
+                                      <option>Resettlement And Community Integration</option>
                                     </select>
                                     <svg className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />

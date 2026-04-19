@@ -109,6 +109,37 @@ export default function OurServices() {
                 </div>
               </div>
 
+              {/* Card - Supported Accommodation */}
+              <div className="bg-white rounded-lg overflow-hidden shadow-sm md:shadow-md">
+                <div className="relative">
+                  <Image
+                    src="/images/people-1492052_1280.jpg"
+                    alt="Adults in a supportive community environment"
+                    width={300}
+                    height={200}
+                    className="w-full h-40 md:h-48 object-cover"
+                  />
+                </div>
+                <div className="p-3 md:p-4">
+                  <div className="flex items-center mb-2">
+                    <svg className="w-4 h-4 text-teal-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="text-xs text-gray-600">Flexible support</span>
+                  </div>
+                  <h4 className="text-base md:text-lg font-bold text-gray-900 mb-2">Supported Accommodation</h4>
+                  <p className="text-xs md:text-sm text-gray-600 leading-relaxed mb-3">
+                    Safe, stable accommodation with person-centred support to build independence and progress towards living more independently in the community.
+                  </p>
+                  <a href="/our-services/supported-accommodation" className="inline-flex items-center text-teal-600 hover:text-teal-800 font-medium text-xs md:text-sm">
+                    Learn More
+                    <svg className="w-3 h-3 md:w-4 md:h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
               {/* Card 3 - Substance Misuse and Recovery Support */}
               <div className="bg-white rounded-lg overflow-hidden shadow-sm md:shadow-md">
                 <div className="relative">
